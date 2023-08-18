@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restrudent Managment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          
+        </div>
+
+        <div class="col-8">
+          <h1 clss="text-center">Restaurant Management</h1>
+          <form id="restaurantForm">
+            
+            <label for="price">Choose Price of dishes:</label>
+            <select id="price" name="price">
+              <option value="120">120</option>
+              <option value="500">500</option>
+              <option value="249">249</option>
+              <option value="300">300</option>
+            </select>
+            
+
+            <label for="dish">Choose a Table Number</label>
+            <select id="dish" name="dish">
+              <option value="ChickenBiriyani">Chicken Biriyani</option>
+              <option value="muglaiParatha">Muglai Paratha</option>
+              <option value="pizza">Pizza</option>
+              <option value="burgar">Burgar</option>
+            </select>
+            
+
+
+            <label for="tableNo">Choose dish:</label>
+            <select id="tableNo" name="tableNo">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            
+
+
+              
+              <button type="submit">Add Details</button>
+          </form>
+      
+          <table id="restaurantTable">
+              <thead>
+                  <tr>
+                      <th>Price</th>
+                      <th>Dish</th>
+                      <th>Table Number</th>
+                      <th>Action</th>
+                     
+                      
+                  </tr>
+              </thead>
+              <tbody id="restrudentTableBody"></tbody>
+          </table>
+      
+          <script src="demo.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+        </div>
+        <div class="col-2">
+          
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
